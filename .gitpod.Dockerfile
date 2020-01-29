@@ -8,5 +8,4 @@ USER gitpod
 # RUN sudo apt-get -q update && #     sudo apt-get install -yq bastet && #     sudo rm -rf /var/lib/apt/lists/*
 #
 # More information: https://www.gitpod.io/docs/42_config_docker/
-RUN cp -a /src/livework/. /backup/
-RUN sudo ./build_custom_debian.sh new
+RUN ls && cd /workspace/src/livework/ && sudo ./build_custom_debian.sh new
